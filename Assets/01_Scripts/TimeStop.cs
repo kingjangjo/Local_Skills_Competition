@@ -8,10 +8,6 @@ public class TimeStop : MonoBehaviour
     private void Start()
     {
         screenProduction = GameObject.FindGameObjectWithTag("ScreenProduction").GetComponent<Image>();
-        if(screenProduction != null)
-        {
-            Debug.LogError("Fiond!!!");
-        }
         StartCoroutine(TimeStopStart());
     }
     IEnumerator TimeStopStart()

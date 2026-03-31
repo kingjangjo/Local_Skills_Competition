@@ -10,25 +10,29 @@ public class PlayerItem : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) && PlayerManager.instance.haveParts[0] == 1)
         {
             StartCoroutine(Reflect());
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2) && PlayerManager.instance.haveParts[1] == 1)
         {
             gameObject.AddComponent<TimeStop>();
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3) && PlayerManager.instance.haveParts[2] == 1)
         {
             StartCoroutine(SpawnSlowField());
         }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
+        if (Input.GetKeyDown(KeyCode.Alpha4) && PlayerManager.instance.haveParts[3] == 1)
         {
             StartCoroutine(BlackHole());
         }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
+        if (Input.GetKeyDown(KeyCode.Alpha5) && PlayerManager.instance.haveParts[4] == 1)
         {
             gameObject.AddComponent<Induction>();
+        }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            gameObject.AddComponent<Bomb>();
         }
     }
     IEnumerator Reflect()

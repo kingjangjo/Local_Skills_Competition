@@ -4,6 +4,10 @@ public class HpScript : MonoBehaviour
 {
     internal float curHp;
     public float maxHp;
+    private void Start()
+    {
+        curHp = maxHp;
+    }
     public virtual void TakeDamage(float damage)
     {
         curHp -= damage;

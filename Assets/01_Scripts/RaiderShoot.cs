@@ -78,6 +78,8 @@ public class RaiderShoot : MonoBehaviour
     {
         if (ownObject == null || collision.gameObject == ownObject.gameObject)
             return;
+        if (collision.CompareTag("Obstacle"))
+            return;
         if (collision.gameObject.GetComponent<HpScript>() != null)
         {
             StartCoroutine(Attack());
@@ -87,6 +89,19 @@ public class RaiderShoot : MonoBehaviour
             }
         }
     }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (ownObject == null || collision.gameObject == ownObject.gameObject)
+    //        return;
+    //    if (collision.gameObject.GetComponent<HpScript>() != null)
+    //    {
+    //        StartCoroutine(Attack());
+    //        if (ownObject.GetComponent<HpScript>() != null)
+    //        {
+    //            collision.gameObject.GetComponent<HpScript>().TakeDamage(damage);
+    //        }
+    //    }
+    //}
     IEnumerator Attack()
     {
         this.gameObject.GetComponent<MeshRenderer>().enabled = false;

@@ -18,6 +18,7 @@ public class PlayerHp : HpScript
         base.TakeDamage(damage);
         playerHpBar.fillAmount = curHp / maxHp;
         playerHpText.text = $"PlayerHp:{curHp}";
+        this.gameObject.AddComponent<Attacked>();
         if (curHp == 0)
             Time.timeScale = 0;
     }

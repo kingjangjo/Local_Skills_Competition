@@ -109,7 +109,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -246,7 +246,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c78c5b82a0f1efd4ea413c96eadc226e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RaiderShoot
-  isFindPlayer: 1
+  tracingTarget: {fileID: 0}
+  isFindTarget: 1
   speed: 22
   tracingTime: 5
   explosionEff: {fileID: 2025544356009087529, guid: c2779072212543641af2f8fd95df7a25, type: 3}
