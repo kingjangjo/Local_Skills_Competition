@@ -353,6 +353,7 @@ GameObject:
   - component: {fileID: 262756594}
   - component: {fileID: 262756593}
   - component: {fileID: 262756595}
+  - component: {fileID: 262756596}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -462,7 +463,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1058316496}
+      - m_Target: {fileID: 262756596}
         m_TargetAssemblyTypeName: ItemClick, Assembly-CSharp
         m_MethodName: ClickItem
         m_Mode: 3
@@ -474,6 +475,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &262756596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262756591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08f30cd7f31cca45a5efd40efad7cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemClick
+  price: 5
 --- !u!1 &269176050
 GameObject:
   m_ObjectHideFlags: 0
@@ -1754,6 +1768,7 @@ GameObject:
   - component: {fileID: 958435680}
   - component: {fileID: 958435682}
   - component: {fileID: 958435683}
+  - component: {fileID: 958435684}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1863,7 +1878,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1058316496}
+      - m_Target: {fileID: 958435684}
         m_TargetAssemblyTypeName: ItemClick, Assembly-CSharp
         m_MethodName: ClickItem
         m_Mode: 3
@@ -1897,6 +1912,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &958435684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958435678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08f30cd7f31cca45a5efd40efad7cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemClick
+  price: 1
 --- !u!1 &1058316491
 GameObject:
   m_ObjectHideFlags: 0
@@ -1909,7 +1937,6 @@ GameObject:
   - component: {fileID: 1058316495}
   - component: {fileID: 1058316494}
   - component: {fileID: 1058316493}
-  - component: {fileID: 1058316496}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2004,18 +2031,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &1058316496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1058316491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e08f30cd7f31cca45a5efd40efad7cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemClick
 --- !u!1 &1059290868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2141,6 +2156,7 @@ GameObject:
   - component: {fileID: 1240521309}
   - component: {fileID: 1240521308}
   - component: {fileID: 1240521310}
+  - component: {fileID: 1240521311}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -2250,7 +2266,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1058316496}
+      - m_Target: {fileID: 1240521311}
         m_TargetAssemblyTypeName: ItemClick, Assembly-CSharp
         m_MethodName: ClickItem
         m_Mode: 3
@@ -2262,6 +2278,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1240521311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240521306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08f30cd7f31cca45a5efd40efad7cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemClick
+  price: 2
 --- !u!1 &1248616607
 GameObject:
   m_ObjectHideFlags: 0
@@ -2802,6 +2831,7 @@ GameObject:
   - component: {fileID: 1736538122}
   - component: {fileID: 1736538121}
   - component: {fileID: 1736538123}
+  - component: {fileID: 1736538124}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -2911,7 +2941,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1058316496}
+      - m_Target: {fileID: 1736538124}
         m_TargetAssemblyTypeName: ItemClick, Assembly-CSharp
         m_MethodName: ClickItem
         m_Mode: 3
@@ -2923,6 +2953,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1736538124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736538119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08f30cd7f31cca45a5efd40efad7cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemClick
+  price: 4
 --- !u!1 &1873276607
 GameObject:
   m_ObjectHideFlags: 0
@@ -3090,6 +3133,7 @@ GameObject:
   - component: {fileID: 2077844354}
   - component: {fileID: 2077844353}
   - component: {fileID: 2077844355}
+  - component: {fileID: 2077844356}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -3199,7 +3243,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1058316496}
+      - m_Target: {fileID: 2077844356}
         m_TargetAssemblyTypeName: ItemClick, Assembly-CSharp
         m_MethodName: ClickItem
         m_Mode: 3
@@ -3211,6 +3255,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2077844356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077844351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08f30cd7f31cca45a5efd40efad7cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemClick
+  price: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

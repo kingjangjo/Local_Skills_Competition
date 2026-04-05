@@ -17,6 +17,7 @@ public class BossState : MonoBehaviour
     }
     private void Update()
     {
+        Debug.Log(currentState);
         switch (currentState)
         {
             case State.Idle:
@@ -31,4 +32,9 @@ public class BossState : MonoBehaviour
                 break;
         }
     }
+    public virtual void Idle() { }
+    public virtual void Attack1() { }
+    public virtual void Attack2() { }
+    public virtual void Attack3() { }
+    public virtual void Move() { }
 }

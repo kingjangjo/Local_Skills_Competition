@@ -10,15 +10,15 @@ public class PlayerItem : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1) && PlayerManager.instance.haveParts[0] == 1)
+        if (Input.GetKeyDown(KeyCode.Alpha1) && PlayerManager.instance.haveParts[1] == 1)
         {
             StartCoroutine(Reflect());
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2) && PlayerManager.instance.haveParts[1] == 1)
+        if (Input.GetKeyDown(KeyCode.Alpha2) && PlayerManager.instance.haveParts[2] == 1)
         {
             gameObject.AddComponent<TimeStop>();
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3) && PlayerManager.instance.haveParts[2] == 1)
+        if (Input.GetKeyDown(KeyCode.Alpha3) && PlayerManager.instance.haveParts[4] == 1)
         {
             StartCoroutine(SpawnSlowField());
         }
@@ -26,7 +26,7 @@ public class PlayerItem : MonoBehaviour
         {
             StartCoroutine(BlackHole());
         }
-        if (Input.GetKeyDown(KeyCode.Alpha5) && PlayerManager.instance.haveParts[4] == 1)
+        if (Input.GetKeyDown(KeyCode.Alpha5) && PlayerManager.instance.haveParts[0] == 1)
         {
             gameObject.AddComponent<Induction>();
         }

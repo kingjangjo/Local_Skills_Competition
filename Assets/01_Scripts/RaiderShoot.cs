@@ -11,6 +11,9 @@ public class RaiderShoot : MonoBehaviour
     [Header("따라가는 시간")]
     public float tracingTime = 3.0f;
 
+    [Header("추적 여부")]
+    public bool isTracing = true;
+
     [Header("폭발 이펙트")]
     public GameObject explosionEff;
 
@@ -37,7 +40,7 @@ public class RaiderShoot : MonoBehaviour
     }
     private void Update()
     {
-        if (isFindTarget)
+        if (isFindTarget && isTracing)
         {
             FindTargetPosition();
             Vector3 direction = (tracingObjectPosition - transform.position).normalized;

@@ -15,6 +15,8 @@ public class Shootter : MonoBehaviour
     public float AutoDelay = 0;
     [Header("산탄 탄퍼짐 정도")]
     public float spreadAngle = 0;
+    [Header("추적 여부")]
+    public bool isTracing = true;
 
     public float shootForce = 0;
 
@@ -44,6 +46,7 @@ public class Shootter : MonoBehaviour
                     Quaternion rotation = Quaternion.Euler(0, currentAngle, 0);
                     Vector3 shootDirection = rotation * transform.forward;
                     var shot = Instantiate(shootRocket, transform.position, Quaternion.LookRotation(shootDirection));
+                    shot.GetComponent<RaiderShoot>().isTracing = isTracing;
                     shot.GetComponent<RaiderShoot>().ownObject = this.gameObject;
                     shot.GetComponent<Rigidbody>().AddForce(shot.transform.forward * shootForce, ForceMode.Impulse);
                 }

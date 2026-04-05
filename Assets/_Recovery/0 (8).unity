@@ -2702,10 +2702,6 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7289307079253334092, guid: f5e3e3327f31a5e4fbe66d5c2efa4c32, type: 3}
-      propertyPath: isTracing
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7289307079253334092, guid: f5e3e3327f31a5e4fbe66d5c2efa4c32, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -2720,10 +2716,6 @@ PrefabInstance:
     - target: {fileID: 7289307079253334092, guid: f5e3e3327f31a5e4fbe66d5c2efa4c32, type: 3}
       propertyPath: spreadAngle
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 7289307079253334092, guid: f5e3e3327f31a5e4fbe66d5c2efa4c32, type: 3}
-      propertyPath: isNotTracing
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8060123486800043453, guid: f5e3e3327f31a5e4fbe66d5c2efa4c32, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -2936,10 +2928,6 @@ PrefabInstance:
     - target: {fileID: 2551621326095661494, guid: ec0893887510cac45975870280ff775c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2768887801074201453, guid: ec0893887510cac45975870280ff775c, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3002973438339310851, guid: ec0893887510cac45975870280ff775c, type: 3}
       propertyPath: m_Radius
